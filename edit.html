@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunglasses Order Form</title>
+    <link rel="stylesheet" href="css/edit.css">
+</head>
+<body>
+    <h1>Order Sunglasses</h1>
+    <form action="myPhp.php" method="get">
+        <label for="color">Color :</label>
+        <select name="color" id="color">
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+            <option value="Red">Red</option>
+        </select>
+        <br>
+        <label for="size">Size :</label>
+        <input type="number" name="size" id="size" min="1" max="5">
+        <br>
+        <label for="quantity">Quantity :</label>
+        <input type="number" name="quantity" id="quantity" min="1" max="10">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
